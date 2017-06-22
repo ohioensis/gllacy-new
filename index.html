@@ -27,37 +27,42 @@
 				<div class="user-block">
 					<ul class="user-block__list">
 						<li class="user-block__item">
-							<input type="search" class="search">
+							<form class="user-block__search-form" action="#" method="get">
+								<label for="search">Поиск</label>
+								<input type="search" name="search" id="search">
+							</form>
 						</li>
 						<li class="user-block__item">
-							<a href="#">Вход</a>
+							<a href="#" class="user-block__login">Вход</a>
 						</li>
 						<li class="user-block__item">
-							<a href="#" class="cart-empty">Пусто</a>
+							<a href="#" class="user-block__cart">Пусто</a>
 						</li>
 					</ul>
 					<div class="user-block__contacts">
 						<p class="user-block__time">С 10 до 20, ежедневно</p>
-						<p class="user-block__phone">8 812 450-25-25</p>
+						<a href="tel:+78124502525" class="user-block__phone">8 812 450-25-25</a>
 					</div>
 				</div>
 			</header>
-			<main>
+		</div>
+		<main>
+			<div class="content-wrapper">
 				<div class="slider">
 					<input class="slider__input" type="radio" name="slider-btn-1" id="slider-btn-1" checked>
 					<input class="slider__input" type="radio" name="slider-btn-1" id="slider-btn-2">
 					<input class="slider__input" type="radio" name="slider-btn-1" id="slider-btn-3">
 					<div class="slider__item">
 						<h2 class="slider__title">Крем-брюле и пломбир с малиновым джемом</h2>
-						<a href="#" class="btn btn--slider">Давайте оба!</a>
+						<a href="#" class="btn slider__btn">Давайте оба!</a>
 					</div>
 					<div class="slider__item">
 						<h2 class="slider__title">Шоколадный пломбир и лимонный сорбет</h2>
-						<a href="#" class="btn btn--slider">Давайте оба!</a>
+						<a href="#" class="btn slider__btn">Давайте оба!</a>
 					</div>
 					<div class="slider__item">
 						<h2 class="slider__title">Пломбир с помадкой и клубничный щербет</h2>
-						<a href="#" class="btn btn--slider">Давайте оба!</a>
+						<a href="#" class="btn slider__btn">Давайте оба!</a>
 					</div>
 					<div class="slider__controls">
 						<label class="slider__toggle" for="slider-btn-1"></label>
@@ -65,40 +70,36 @@
 						<label class="slider__toggle" for="slider-btn-3"></label>
 					</div>
 				</div>
-				<div class="content-wrapper">
-					<section class="offer offer--raspberry">
-						<h2 class="offer__title">Малинка даром!</h2>
-						<p class="offer__description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-						<a href="#" class="btn btn--offer">Хочу варенье!</a>
-					</section>
-					<section class="offer offer--chockolate">
-						<h2 class="offer__title">Шоколадки даром!</h2>
-						<p class="offer__description">При покупке 2 кг пломбира добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-						<a href="#" class="btn btn--offer">Хочу шоколадки!</a>
-					</section>
-				</div>
-				<div class="content-wrapper">
-					<article class="hit">
-						<img src="img/ice-cream-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-						<h3 class="hit__title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-						<p class="hit__price">310 &#8399;/кг</p>
-					</article>
-					<article class="hit">
+				<section class="offer offer--raspberry">
+					<h2 class="offer__title">Малинка даром!</h2>
+					<p class="offer__description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+					<a href="#" class="btn offer__btn">Хочу варенье!</a>
+				</section>
+				<section class="offer offer--chockolate">
+					<h2 class="offer__title">Шоколадки даром!</h2>
+					<p class="offer__description">При покупке 2 кг пломбира добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+					<a href="#" class="btn offer__btn">Хочу шоколадки!</a>
+				</section>
+				<article class="catalog-item hit">
+					<img src="img/ice-cream-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+					<h3 class="catalog-item__title"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
+					<p class="catalog-item__price">310 &#8399;/кг</p>
+				</article>
+				<article class="catalog-item hit">
 						<img src="img/ice-cream-2.png" alt="Сливочно-кофейное с кусочками шоколада">
-						<h3 class="hit__title">Сливочно-кофейное с кусочками шоколада</h3>
-						<p class="hit__price">380 &#8399;/кг</p>
-					</article>
-					<article class="hit">
-						<img src="img/ice-cream-3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-						<h3 class="hit__title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
-						<p class="hit__price">355 &#8399;/кг</p>
-					</article>
-					<article class="hit">
-						<img src="img/ice-cream-4.png" alt="Сливочное крем-брюле с карамельной подливкой">
-						<h3 class="hit__title">Сливочное крем-брюле с карамельной подливкой</h3>
-						<p class="hit__price">415 &#8399;/кг</p>
-					</article>
-				</div>
+						<h3 class="catalog-item__title"><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
+						<p class="catalog-item__price">380 &#8399;/кг</p>
+				</article>
+				<article class="catalog-item hit">
+					<img src="img/ice-cream-3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+					<h3 class="catalog-item__title"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+					<p class="catalog-item__price">355 &#8399;/кг</p>
+				</article>
+				<article class="catalog-item hit">
+					<img src="img/ice-cream-4.png" alt="Сливочное крем-брюле с карамельной подливкой">
+					<h3 class="catalog-item__title"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
+					<p class="catalog-item__price">415 &#8399;/кг</p>
+				</article>
 				<section class="features">
 					<h2 class="features__title">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
 					<ul class="features__list">
@@ -116,50 +117,50 @@
 						</li>
 					</ul>
 				</section>
-				<div class="content-wrapper">
-					<section class="blog">
-						<h3 class="blog__title">Новое в нашем блоге</h3>
-						<b class="blog__post-title">10 способов сервировки фруктовых щербетов к столу</b>
-					</section>
-					<section class="mailing">
-						<p class="mailing__description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-						<form class="mailing__form" action="#" method="post">
-							<input class="mailing__input" type="text" name="mail" value="Электронная почта">
-							<button type="submit" class="btn btn--mailing">Отправить</button>
-						</form>
-					</section> 
+				<section class="blog">
+					<h3 class="blog__title">Новое в нашем блоге</h3>
+					<b class="blog__post-title">10 способов сервировки фруктовых щербетов к столу</b>
+				</section>
+				<section class="mailing">
+					<p class="mailing__description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+					<form class="mailing__form" action="#" method="post">
+						<input class="mailing__input" type="text" name="mail" value="Электронная почта">
+						<button type="submit" class="btn mailing__btn">Отправить</button>
+					</form>
+				</section> 
+			</div>
+			<div class="map">
+				<div class="map__marker">
+					<img src="img/map-marker.png" alt="">
 				</div>
-				<div class="map">
-					<div class="map__marker">
-						<img src="img/map-marker.png" alt="">
+				<section class="map-contacts">
+					<div class="map-contacts__adress">
+						<p>Адрес главного офиса и офлайн магазина:</p>
+						<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
 					</div>
-					<section class="map__contacts">
-						<div class="map__adress">
-							<p>Адрес главного офиса и офлайн магазина:</p>
-							<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-						</div>
-						<div class="map__phone">
-							<p>Для заказов по телефону:</p>
-							<b>8 812 450-25-25</b>
-							<p>(с 10 до 20 ежедневно)</p>
-						</div>
-						<a href="#" class="btn btn--map">Форма обратной связи</a>
-					</section>
-				</div>
-			</main>
+					<div class="map-contacts__phone">
+						<p>Для заказов по телефону:</p>
+						<a href="tel:+88124502525">8 812 450-25-25</a>
+						<p>(с 10 до 20 ежедневно)</p>
+					</div>
+					<a href="#" class="btn map-contacts__btn">Форма обратной связи</a>
+				</section>
+			</div>
+		</main>
+		<div class="content-wrapper">
 			<footer class="page-footer">
-				<ul class="footer-social">
-					<li class="footer-social__item">
-						<a href="#" class="footer-social__btn footer-social__btn--tw">Твиттер</a>
+				<ul class="social-links">
+					<li class="social-links__item">
+						<a href="#" class="fsocial-links__btn social-links__btn--tw">Твиттер</a>
 					</li>
-					<li class="footer-social__item">
-						<a href="#" class="footer-social__btn footer-social__btn--inst">Инстаграм</a>
+					<li class="social-links__item">
+						<a href="#" class="social-links__btn social-links__btn--inst">Инстаграм</a>
 					</li>
-					<li class="footer-social__item">
-						<a href="#" class="footer-social__btn footer-social__btn--fb">Фейсбук</a>
+					<li class="social-links__item">
+						<a href="#" class="social-links__btn social-links__btn--fb">Фейсбук</a>
 					</li>
-					<li class="footer-social__item">
-						<a href="#" class="footer-social__btn footer-social__btn--vk">Вконтакте</a>
+					<li class="social-links__item">
+						<a href="#" class="social-links__btn social-links__btn--vk">Вконтакте</a>
 					</li>
 				</ul>
 				<nav class="footer-navigation">

@@ -1,0 +1,25 @@
+{
+  "name": "gllacy-new",
+  "version": "1.0.0",
+  "description": "Адаптивный сайт магазина мороженого Глейси",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-less": "^1.4.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohioensis/gllacy-new.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ohioensis/gllacy-new/issues"
+  },
+  "homepage": "https://github.com/ohioensis/gllacy-new#readme"
+}

@@ -1,5 +1,110 @@
 .site-wrapper {
+  max-width: 1200px;
   margin: 0;
   padding: 0;
   background-color: #9aafa3;
+}
+.content-wrapper {
+  max-width: 1146px;
+  margin: 0 auto;
+}
+.page-header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.logo {
+  display: block;
+  float: left;
+  margin-top: 10px;
+}
+.navigation {
+  display: block;
+  float: left;
+  margin-top: 20px;
+}
+.navigation__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 380px;
+}
+.navigation__item {
+  display: inline-block;
+  vertical-align: middle;
+}
+.navigation__item a {
+  padding-left: 23px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.user-block {
+  display: block;
+  float: right;
+  margin-top: 20px;
+}
+.user-block::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.user-block__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.user-block__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.user-block__item a {
+  padding: 8px 16px 8px 44px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  font-weight: normal;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+}
+.user-block__search-form label {
+  display: block;
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+}
+.user-block__search-form input {
+  display: none;
+}
+.user-block__contacts {
+  float: right;
+}
+.user-block__time {
+  display: block;
+  text-align: right;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.user-block__phone {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 24px;
 }

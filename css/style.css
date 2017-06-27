@@ -1,26 +1,27 @@
 .site-wrapper {
   max-width: 1200px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   background-color: #9aafa3;
 }
 .content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   max-width: 1146px;
   margin: 0 auto;
 }
-.page-header::after {
-  content: "";
-  display: table;
-  clear: both;
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .logo {
   display: block;
-  float: left;
   margin-top: 10px;
 }
 .navigation {
   display: block;
-  float: left;
   margin-top: 20px;
 }
 .navigation__list {
@@ -44,7 +45,6 @@
 }
 .user-block {
   display: block;
-  float: right;
   margin-top: 20px;
 }
 .user-block::after {
@@ -109,6 +109,7 @@
   line-height: 24px;
 }
 .slider {
+  width: 100%;
   height: 650px;
 }
 .btn {
@@ -116,6 +117,7 @@
   max-width: 250px;
   box-sizing: padding-box;
   text-decoration: none;
+  text-align: center;
   padding: 10px 20px;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
@@ -128,4 +130,89 @@
   /*Переделать в градиент*/
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   border-radius: 20px;
+}
+.offer {
+  position: relative;
+  max-width: 560px;
+  min-width: 420px;
+  min-height: 230px;
+  box-sizing: border-box;
+  margin-top: 38px;
+  padding: 20px;
+  border-radius: 17px;
+}
+.offer--raspberry {
+  background: url("../img/background-raspberry.jpg") no-repeat center;
+}
+.offer--chockolate {
+  background: url("../img/background-chockolate.jpg") no-repeat center;
+}
+.offer__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+.offer__description {
+  display: block;
+  margin: 0;
+  margin-top: 20px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+}
+.offer__btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 145px;
+}
+.offer__btn--chockolate {
+  width: 170px;
+}
+.catalog-item {
+  position: relative;
+  min-width: 200px;
+  max-width: 267px;
+  margin-top: 38px;
+}
+.catalog-item img {
+  min-height: 200px;
+  max-height: 267px;
+  border-radius: 50%;
+}
+.catalog-item__title {
+  margin: 0;
+  padding: 0;
+}
+.catalog-item__title a {
+  display: block;
+  margin-top: 15px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  line-height: 22px;
+  text-align: center;
+}
+.catalog-item__price {
+  position: absolute;
+  top: 38%;
+  left: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
 }

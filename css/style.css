@@ -127,7 +127,7 @@
   line-height: 24px;
   font-weight: bold;
   background-color: #ea5139;
-  /*Переделать в градиент*/
+  background-image: linear-gradient(#f26843 60%, #db4c38);
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   border-radius: 20px;
 }

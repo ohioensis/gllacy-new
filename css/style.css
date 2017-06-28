@@ -39,6 +39,7 @@
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
   font-weight: bold;
   text-decoration: underline;
@@ -67,6 +68,7 @@
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
   font-size: 14px;
   line-height: 16px;
@@ -95,6 +97,7 @@
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
 }
 .user-block__phone {
@@ -104,6 +107,7 @@
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
   font-size: 22px;
   line-height: 24px;
@@ -122,6 +126,7 @@
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
   font-size: 18px;
   line-height: 24px;
@@ -152,6 +157,7 @@
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
   font-size: 35px;
   line-height: 41px;
@@ -164,6 +170,7 @@
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
   font-size: 18px;
   line-height: 22px;
@@ -203,6 +210,7 @@
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
   line-height: 22px;
   text-align: center;
@@ -214,6 +222,7 @@
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
   font-size: 45px;
   line-height: 45px;
@@ -257,6 +266,7 @@
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
 }
 .features {
@@ -462,6 +472,7 @@
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
   font-size: 13px;
   font-weight: normal;
@@ -470,6 +481,7 @@
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
   font-size: 12px;
   padding-top: 43px;
@@ -482,6 +494,7 @@
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
   font-size: 12px;
 }
@@ -499,6 +512,7 @@
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
   font-size: 14px;
   line-height: 16px;
@@ -511,6 +525,7 @@
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
   font-size: 35px;
   line-height: 41px;
@@ -524,6 +539,7 @@
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
 }
 .filter__section {

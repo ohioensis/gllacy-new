@@ -1,6 +1,32 @@
 .catalog-wrapper {
 	display: flex;
 	width: 100%;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.catalog-wrapper__line {
+	display: flex;
+	width: 100%;
+	flex-wrap: no-wrap;
+}
+
+.catalog-wrapper__pagination {
+	display: flex;
 	justify-content: space-between;
-	wrap: no-wrap;
+	width: 400px; /*Пока кнопки не заменены на стрелочки, потом уменьшить ширину в два раза*/
+	margin-top: 70px;
+}
+
+.catalog-wrapper__pagination-list {
+	display: flex;
+	justify-content: space-between;
+	width: 150px;
+	.list-style-none();
+}
+
+.catalog-wrapper__pagination-item a {
+	display: block;
+	text-decoration: none;
+	.font-basic();
 }

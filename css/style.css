@@ -219,11 +219,45 @@
   line-height: 45px;
   font-weight: bold;
 }
+.catalog-item__btn {
+  display: none;
+  position: absolute;
+  width: 200px;
+  margin: 10px auto;
+}
 .catalog-wrapper {
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.catalog-wrapper__line {
+  display: flex;
+  width: 100%;
+  flex-wrap: no-wrap;
+}
+.catalog-wrapper__pagination {
+  display: flex;
   justify-content: space-between;
-  wrap: no-wrap;
+  width: 400px;
+  /*Пока кнопки не заменены на стрелочки, потом уменьшить ширину в два раза*/
+  margin-top: 70px;
+}
+.catalog-wrapper__pagination-list {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.catalog-wrapper__pagination-item a {
+  display: block;
+  text-decoration: none;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
 }
 .features {
   width: 100%;
@@ -450,4 +484,76 @@
   line-height: 18px;
   color: #ffffff;
   font-size: 12px;
+}
+.breadcrumbs {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+.breadcrumbs__item a {
+  padding-right: 20px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+}
+.page-title {
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 860px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.filter__section {
+  margin-top: 10px;
+}
+.filter__section ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.filter__section-title {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  padding-left: 15px;
+  font-size: 14px;
+  line-height: 16px;
+}
+.filter__section-content {
+  display: block;
+  padding: 10px 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+}
+.filter__btn {
+  width: 145px;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: none;
+  box-shadow: none;
+  border: 2px solid #ffffff;
 }

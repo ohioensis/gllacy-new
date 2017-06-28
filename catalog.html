@@ -55,22 +55,24 @@
 					<a href="#">Каталог</a>
 				</li>
 				<li class="breadcrumbs__item breadcrumbs__item--active">
-					Сливочное
+					<a>Сливочное</a>
 				</li>
 			</ul>
 			<h1 class="page-title">Сливочное мороженое</h1>
 				<form class="filter" action="#" method="get">
 					<div class="filter__section filter__sort-result">
 						<h2 class="filter__section-title">Сортировка:</h2>
-						<ul class="filter__sort-result-list">
-							<li class="filter__sort-result-item">
-								По популярности
-							</li>
-						</ul>
+						<div class="filter__section-content">
+							<ul class="filter__sort-result-list">
+								<li class="filter__sort-result-item">
+									по популярности
+								</li>
+							</ul>
+						</div>
 					</div>
 					<div class="filter__section filter__price">
 						<h2 class="filter__section-title">Цена:</h2>
-						<div class="filter__price-controls">
+						<div class="filter__section-content filter__price-controls">
 							<input type="text" name="min-price" id="min-price" value="100">
 							<label for="min-price"> руб. - </label>
 							<input type="text" name="max-price" id="max-price" value="500">
@@ -80,147 +82,157 @@
 					</div>
 					<div class="filter__section filter__fat">
 						<h2 class="filter__section-title">Жирность:</h2>
-						<ul class="filter__fat-list">
-							<li class="filter__fat-item">
-								<input type="radio" name="fat" id="0">
-								<label for="0">0%</label>
-							</li>
-							<li class="filter__fat-item">
-								<input type="radio" name="fat" id="to-10" checked>
-								<label for="to-10">до 10%</label>
-							</li>
-							<li class="filter__fat-item">
-								<input type="radio" name="fat" id="to-30">
-								<label for="to-30">до 30%</label>
-							</li>
-							<li class="filter__fat-item">
-								<input type="radio" name="fat" id="above-30">
-								<label for="above-30">выше 30%</label>
-							</li>
-						</ul>
+						<div class="filter__section-content">
+							<ul class="filter__fat-list">
+								<li class="filter__fat-item">
+									<input type="radio" name="fat" id="0">
+									<label for="0">0%</label>
+								</li>
+								<li class="filter__fat-item">
+									<input type="radio" name="fat" id="to-10" checked>
+									<label for="to-10">до 10%</label>
+								</li>
+								<li class="filter__fat-item">
+									<input type="radio" name="fat" id="to-30">
+									<label for="to-30">до 30%</label>
+								</li>
+								<li class="filter__fat-item">
+									<input type="radio" name="fat" id="above-30">
+									<label for="above-30">выше 30%</label>
+								</li>
+							</ul>
+						</div>
 					</div>
 					<div class="filter__section filter__fillers">
 						<h2 class="filter__section-title">Наполнители:</h2>
-						<ul class="filter__fillers-list">
-							<li class="filter__fillers-item">
-								<input type="checkbox" name="choco" id="choco" checked>
-								<label for="choco">шоколадные</label>
-							</li>
-							<li class="filter__fillers-item">
-								<input type="checkbox" name="shugar" id="shugar" checked>
-								<label for="shugar">сахарные присыпки</label>
-							</li>
-							<li class="filter__fillers-item">
-								<input type="checkbox" name="fruit" id="fruit">
-								<label for="fruit">фрукты</label>
-							</li>
-							<li class="filter__fillers-item">
-								<input type="checkbox" name="syrup" id="syrup">
-								<label for="syrup">сиропы</label>
-							</li>
-							<li class="filter__fillers-item">
-								<input type="checkbox" name="jam" id="jam">
-								<label for="lam">джемы</label>
-							</li>
-						</ul>						
+						<div class="filter__section-content">
+							<ul class="filter__fillers-list">
+								<li class="filter__fillers-item">
+									<input type="checkbox" name="choco" id="choco" checked>
+									<label for="choco">шоколадные</label>
+								</li>
+								<li class="filter__fillers-item">
+									<input type="checkbox" name="shugar" id="shugar" checked>
+									<label for="shugar">сахарные присыпки</label>
+								</li>
+								<li class="filter__fillers-item">
+									<input type="checkbox" name="fruit" id="fruit">
+									<label for="fruit">фрукты</label>
+								</li>
+								<li class="filter__fillers-item">
+									<input type="checkbox" name="syrup" id="syrup">
+									<label for="syrup">сиропы</label>
+								</li>
+								<li class="filter__fillers-item">
+									<input type="checkbox" name="jam" id="jam">
+									<label for="lam">джемы</label>
+								</li>
+							</ul>
+						</div>						
 					</div>
 					<button type="submit" class="btn filter__btn">Применить</button>
 				</form>
-				<div class="catalog">
+			<div class="catalog-wrapper">
+				<div class="catalog-wrapper__line">
 					<article class="catalog-item">
-						<img src="img/ice-cream-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+						<img src="img/ice-cream-1.jpg" width="100%" height="auto" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 						<h3 class="catalog-item__title"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
 						<p class="catalog-item__price">310 &#8399;/кг</p>
 						<a href="#" class="btn catalog-item__btn">Быстрый просмотр</a>
 					</article>
 					<article class="catalog-item">
-						<img src="img/ice-cream-2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
+						<img src="img/ice-cream-2.jpg" width="100%" height="auto" alt="Сливочно-кофейное с кусочками шоколада">
 						<h3 class="catalog-item__title"><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
 						<p class="catalog-item__price">380 &#8399;/кг</p>
 						<a href="#" class="btn catalog-item__btn">Быстрый просмотр</a>
 					</article>
 					<article class="catalog-item">
-						<img src="img/ice-cream-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+						<img src="img/ice-cream-3.jpg" width="100%" height="auto" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 						<h3 class="catalog-item__title"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
 						<p class="catalog-item__price">355 &#8399;/кг</p>
 						<a href="#" class="btn catalog-item__btn">Быстрый просмотр</a>
 					</article>
 					<article class="catalog-item">
-						<img src="img/ice-cream-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
+						<img src="img/ice-cream-4.jpg" width="100%" height="auto" alt="Сливочное крем-брюле с карамельной подливкой">
 						<h3 class="catalog-item__title"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
 						<p class="catalog-item__price">415 &#8399;/кг</p>
 						<a href="#" class="btn catalog-item__btn">Быстрый просмотр</a>
 					</article>
+				</div>
+				<div class="catalog-wrapper__line">
 					<article class="catalog-item">
-						<img src="img/ice-cream-5.jpg" alt="Сливочное с брусничным джемом">
+						<img src="img/ice-cream-5.jpg" width="100%" height="auto" alt="Сливочное с брусничным джемом">
 						<h3 class="catalog-item__title"><a href="#">Сливочное с брусничным джемом</a></h3>
 						<p class="catalog-item__price">325 &#8399;/кг</p>
 						<a href="#" class="btn catalog-item__btn">Быстрый просмотр</a>
 					</article>
 					<article class="catalog-item">
-						<img src="img/ice-cream-6.jpg" alt="Сливочно-черничное с цельными ягодами черники">
+						<img src="img/ice-cream-6.jpg" width="100%" height="auto" alt="Сливочно-черничное с цельными ягодами черники">
 						<h3 class="catalog-item__title"><a href="#">Сливочно-черничное с цельными ягодами черники</a></h3>
 						<p class="catalog-item__price">410 &#8399;/кг</p>
 						<a href="#" class="btn catalog-item__btn">Быстрый просмотр</a>
 					</article>
 					<article class="catalog-item">
-						<img src="img/ice-cream-7.jpg" alt="Сливочно-лимонное с карамельной присыпкой">
+						<img src="img/ice-cream-7.jpg" width="100%" height="auto" alt="Сливочно-лимонное с карамельной присыпкой">
 						<h3 class="catalog-item__title"><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h3>
 						<p class="catalog-item__price">375 &#8399;/кг</p>
 						<a href="#" class="btn catalog-item__btn">Быстрый просмотр</a>
 					</article>
 					<article class="catalog-item">
-						<img src="img/ice-cream-8.jpg" alt="Сливочное с шоколадной стружкой">
+						<img src="img/ice-cream-8.jpg" width="100%" height="auto" alt="Сливочное с шоколадной стружкой">
 						<h3 class="catalog-item__title"><a href="#">Сливочное с шоколадной стружкой</a></h3>
 						<p class="catalog-item__price">320 &#8399;/кг</p>
 						<a href="#" class="btn catalog-item__btn">Быстрый просмотр</a>
 					</article>
+				</div>
+				<div class="catalog-wrapper__line">
 					<article class="catalog-item">
-						<img src="img/ice-cream-9.jpg" alt="Сливочно-ванильное с кусочками шоколада">
+						<img src="img/ice-cream-9.jpg" width="100%" height="auto" alt="Сливочно-ванильное с кусочками шоколада">
 						<h3 class="catalog-item__title"><a href="#">Сливочно-ванильное с кусочками шоколада</a></h3>
 						<p class="catalog-item__price">440 &#8399;/кг</p>
 						<a href="#" class="btn catalog-item__btn">Быстрый просмотр</a>
 					</article>
 					<article class="catalog-item">
-						<img src="img/ice-cream-10.jpg" alt="Сливочное с ментоловым сиропом">
+						<img src="img/ice-cream-10.jpg" width="100%" height="auto" alt="Сливочное с ментоловым сиропом">
 						<h3 class="catalog-item__title"><a href="#">Сливочное с ментоловым сиропом</a></h3>
 						<p class="catalog-item__price">435 &#8399;/кг</p>
 						<a href="#" class="btn catalog-item__btn">Быстрый просмотр</a>
 					</article>
 					<article class="catalog-item">
-						<img src="img/ice-cream-11.jpg" alt="Сливочное с кусочками черного шоколада">
+						<img src="img/ice-cream-11.jpg" width="100%" height="auto" alt="Сливочное с кусочками черного шоколада">
 						<h3 class="catalog-item__title"><a href="#">Сливочное с шоколадной стружкой</a></h3>
 						<p class="catalog-item__price">355 &#8399;/кг</p>
 						<a href="#" class="btn catalog-item__btn">Быстрый просмотр</a>
 					</article>
 					<article class="catalog-item">
-						<img src="img/ice-cream-12.jpg" alt="Сливочное с мятным сиропом">
+						<img src="img/ice-cream-12.jpg" width="100%" height="auto" alt="Сливочное с мятным сиропом">
 						<h3 class="catalog-item__title"><a href="#">Сливочное с мятным сиропом</a></h3>
 						<p class="catalog-item__price">420 &#8399;/кг</p>
 						<a href="#" class="btn catalog-item__btn">Быстрый просмотр</a>
 					</article>
-					<div class="catalog__pagination">
-						<button class="catalog__pagination-control catalog__pagination-control--prev" type="button">Назад</button>
-						<ul class="catalog__pagination-list">
-							<li class="catalog__pagination-item catalog__pagination-item--active">
+				</div>
+				<div class="catalog-wrapper__pagination">
+						<button class="catalog-wrapper__pagination-control catalog-wrapper__pagination-control--prev" type="button">Назад</button>
+						<ul class="catalog-wrapper__pagination-list">
+							<li class="catalog-wrapper__pagination-item catalog-wrapper__pagination-item--active">
 								<a>1</a>
 							</li>
-							<li class="catalog__pagination-item">
+							<li class="catalog-wrapper__pagination-item">
 								<a href="#">2</a>
 							</li>
-							<li class="catalog__pagination-item">
+							<li class="catalog-wrapper__pagination-item">
 								<a href="#">3</a>
 							</li>
-							<li class="catalog__pagination-item">
+							<li class="catalog-wrapper__pagination-item">
 								<a href="#">4</a>
 							</li>
-							<li class="catalog__pagination-item">
+							<li class="catalog-wrapper__pagination-item">
 								<a href="#">5</a>
 							</li>
 						</ul>
-						<button class="catalog__pagination-control catalog__pagination-control--next" type="button">Вперед</button>
+						<button class="catalog-wrapper__pagination-control catalog-wrapper__pagination-control--next" type="button">Вперед</button>
 					</div>
-				</div>
+			</div>
 		</main>
 		<footer class="page-footer">
 				<ul class="social-links">
@@ -256,7 +268,7 @@
 				<div class="footer-copyright">
 					<p class="footer-copyright__paragraph">Сделано в <a href="#">HTML Academy</a> &#169; 2017</p>
 				</div>
-			</footer>
+		</footer>
 	</div>
 </body>
 </html>
